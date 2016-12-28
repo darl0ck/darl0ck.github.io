@@ -1,41 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Tp database</title>
+    <link rel=”stylesheet” type=”text/css” href=”style.css” media=”all” />
+</head>
 
-<script type="text/javascript">
-
-function detectBrowser()
-{
-	/*
-    var fallback = true;
-    
-    if (navigator && navigator.vendor) {
-        if (navigator.vendor.search("Apple") != -1) {
-            var vers = parseInt(navigator.appVersion.replace(/^.*?AppleWebKit\/(\d+).*?$/,'$1'),0);
-                if (vers >= 532) {
-                    fallback = false;
-                }
-        }
-    }
-    
-    var slashIndex = window.location.href.lastIndexOf("/");
-    var cropped = window.location.href.slice(0,slashIndex+1);
-    
-    if (fallback) {
-        window.location.replace( cropped + "assets/fallback/index.html" );
-    }
-    else {
-        window.location.replace( cropped + "assets/player/KeynoteDHTMLPlayer.html" );
-    }
-    */
-    var slashIndex = window.location.href.lastIndexOf("/");
-    var cropped = window.location.href.slice(0,slashIndex+1);
-    
-    window.location.replace(cropped + "assets/player/KeynoteDHTMLPlayer.html");
-
-}
-
-</script>
-
-<body bgcolor="black" onload="detectBrowser()">
-</body>
+<frameset cols="200,*">
+    <frame class="sFrame" src="menu.html" name="MENU" noresize>
+    <frame src="startpage.html" name="CONTENT">
+</frameset>
 
 </html>
