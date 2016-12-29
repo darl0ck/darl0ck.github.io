@@ -1,0 +1,110 @@
+.btn-primary {
+    background-color: #5885d8;
+    background-image: -ms-linear-gradient(top, #6d9bf0, #4571c1);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6d9bf0), to(#4571c1));
+    background-image: -webkit-linear-gradient(top, #6d9bf0, #4571c1);
+    background-image: -o-linear-gradient(top, #6d9bf0, #4571c1);
+    background-image: linear-gradient(top, #6d9bf0, #4571c1);
+    background-image: -moz-linear-gradient(top, #6d9bf0, #4571c1);
+    border-color: #456eba;
+    border-color: rgba(69, 110, 186, 1) rgba(69, 110, 186, 1) rgba(69, 110, 186, 1);
+    border-color: #456eba #456eba #3c62a9;
+    color: #fff;
+    text-decoration: none;
+    text-shadow:#456eba 0 1px 0;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.active{
+    background-color: #4571c1;
+    *background-color: #4571c1;
+    /* Buttons in IE7 don't get borders, so darken on hover */
+
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+      -ms-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #4571c1;
+}
+
+.littleSquare {background-color: #4571c1;}
+
+#speciality {width: 450px;}
+#subject {width: 450px;}
+
+.bak-table td:first-child{
+    width: 200px;
+}
+
+/*Кастомизируем сплывающий блок*/
+#footerNavigation .popover{
+    max-width: 300px !important;
+    margin-top: 10px;
+    background-color: #FFCC33;
+}
+
+#footerNavigation .popover.top .arrow,
+#footerNavigation .popover.top .arrow:after{
+    border-width: 19px 0 0 20px !important;
+}
+
+#footerNavigation .popover.top .arrow{
+    left: 35% !important;
+    bottom: -20px !important;
+}
+
+#footerNavigation .popover.top .arrow:after{
+    margin-left: -21px !important;
+    bottom: 2px !important;
+    border-top-color: #FFCC33;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .tr-buttons{
+        margin-right: 10px;
+    }
+}
+
+ul.structure {
+    border-radius: 3px;
+    height: 148px;
+    overflow-y: auto;
+    padding: 10px 0px 10px 10px;
+    border: solid 1px #CCCCCC;
+    list-style: none;
+    margin-left: 0px;
+}
+
+ul.structure li {
+    margin-bottom: 0;
+    list-style-image: none;
+}
+
+ul.structure ul {
+    list-style: none;
+}
+
+.structure input[type="checkbox"] {
+    margin-bottom: 5px;
+    margin-right: 3px;
+    line-height: 16px;
+}
+
+.jstree a.jstree-anchor {
+    white-space: normal;
+    height: auto;
+}
+
+.jstree .jstree-container-ul {
+    padding-right: 25px
+}
