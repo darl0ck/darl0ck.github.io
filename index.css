@@ -194,12 +194,6 @@ div p {
     background: url(test.jpg);
 }
 
-input[type=checkbox]:checked ~ .to-be-changed {
-    width: 500px;
-    height: auto;
-    text-align: left;
-    margin: 0 8px 0 0;
-}
 div.rating {
     width: 85px;
     background: url('star-0-big.gif') repeat-x 0 0;
