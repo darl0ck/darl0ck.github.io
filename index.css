@@ -1,31 +1,33 @@
-input[type=checkbox]:checked ~ .to-be-changed .block
+/*stylelint-disable max-line-length*/
+
+input[type='checkbox']:checked ~ .to-be-changed .block
 {
     float: left;
     position: inherit;
-    /*margin-top: -184px;*/
-    /*margin-left: 344px;*/
-    /*width: 156px;*/
     display: -webkit-box;
 }
 
-input[type=checkbox]:checked ~ .to-be-changed {
+input[type='checkbox']:checked ~ .to-be-changed
+{
     width: 500px;
     height: auto;
     text-align: left;
-    margin: 0 8px 0 0;
+    margin-right: 8px;
 }
 
-input[type=checkbox]:checked ~ .to-be-changed .block .price {
+input[type='checkbox']:checked ~ .to-be-changed .block .price
+{
     margin-top: 3em;
     margin-left: 45em;
 }
 
-input[type=checkbox]:checked ~ .to-be-changed .element
+input[type='checkbox']:checked ~ .to-be-changed .element
 {
     margin: 2em;
     padding-left: 8em;
     position: absolute;
 }
+
 body
 {
     min-width: 349px;
@@ -37,27 +39,32 @@ span.rating
     display: inline-block;
 }
 
-.title {
+.title
+{
     font-weight: bold;
     font-family: cursive;
-    text-align: center
+    text-align: center;
 }
 
-.title::first-letter {
+.title::first-letter
+{
     color: #f00;
 }
 
-div {
+div
+{
     height: 10px;
 
 }
 
-div p {
+div p
+{
     margin: 5px ;
     text-overflow: ellipsis;
 }
 
-.block {
+.block
+{
     margin: 10px;
     height: 250px;
     padding: 50px;
@@ -67,14 +74,16 @@ div p {
     text-overflow: ellipsis;
 }
 
-.name {
+.name
+{
     font-family: sans-serif;
     font-style: italic;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.name:hover {
+.name:hover
+{
     color: #9a84ff;
     font-weight: bold;
     font-style: normal;
@@ -83,52 +92,63 @@ div p {
     text-overflow: ellipsis;
 }
 
-.category {
+.category
+{
     font-family: 'Poiret One', cursive;
     font-style: oblique;
 }
 
-.category:hover {
+.category:hover
+{
     color: #b38c62;
     font-weight: bold;
     font-style: normal;
     font-size: larger;
 }
 
-.mark{
-    font-size:larger;
+.mark
+{
+    font-size: larger;
 
 }
-.price {
+
+.price
+{
     font-family: 'Pacifico', cursive;
     position: absolute;
     margin-top: -39px;
 }
 
-.price:hover {
+.price:hover
+{
     font-weight: bold;
     font-size: larger;
     color: #92b379;
 }
 
-.about {
+.about
+{
     font-family: serif;
 
 }
 
-.about:hover {
+.about:hover
+{
     font-size: large;
     font-weight: bold;
     color: #b36370;
 
 }
 
-@media only screen and (max-device-width: 768px) {
-    .title {
+@media only screen and (max-device-width: 768px)
+{
+    .title
+{
         font-size: 32px;
     }
 
-    div {
+    div
+{
         max-width: 68%;
         height: auto;
         min-width: 349px;
@@ -136,164 +156,190 @@ div p {
     }
 }
 
-@media only screen and (max-device-width: 480px) {
-    .title {
+@media only screen and (max-device-width: 480px)
+{
+    .title
+{
         text-align: center;
         font-size: 100%;
     }
 
-    div {
+    div
+{
         max-width: 28%;
         height: auto;
     }
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Poiret One', cursive;
     src: url('https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic');
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Indie Flower', cursive;
     src: url('https://fonts.googleapis.com/css?family=Indie+');
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Pacifico', cursive;
     src: url('https://fonts.googleapis.com/css?family=Pacifico') ;
 }
 
-.cat1 {
+.cat1
+{
     background: url(sadcat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat2 {
+.cat2
+{
     background: url(lovelycat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat3 {
+.cat3
+{
     background: url(cinemacat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat4 {
+.cat4
+{
     background: url(confusecat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat5 {
+.cat5
+{
     background: url(007cat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat6 {
+.cat6
+{
     background: url(satisfiedcat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat7 {
+.cat7
+{
     background: url(funnycat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat8 {
+.cat8
+{
     background: url(scornfulcat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat9 {
+.cat9
+{
     background: url(seekcat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.cat10 {
+.cat10
+{
     background: url(hungrycat.jpg);
     display: block;
     width: 196px;
     height: 183px;
 }
 
-.change:hover {
+.change:hover
+{
     background: url(test.jpg);
 }
 
-
-div.rating {
+div.rating
+{
     width: 85px;
     background: url('star-0-big.gif') repeat-x 0 0;
 }
-div.rating div {
+
+div.rating div
+{
     height: 18px;
     background: url('star-1-big.gif') repeat-x 0 0;
     font-size: 1px;
     text-indent: -9999px;
 }
 
-
-.rating:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-    clip:rect(0,0,0,0);
+.rating:not(:checked) > input
+{
+    position: absolute;
+    top: -9999px;
+    clip: rect(0,0,0,0);
 }
 
-.rating:not(:checked) > label {
-    float:right;
-    width:1em;
-    padding:0 .1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:198%;
-    line-height:1.2;
-    color:#ddd;
-    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+.rating:not(:checked) > label
+{
+    float: right;
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 198%;
+    line-height: 1.2;
+    color: #ddd;
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+    cursor: pointer;
+
 }
 
-.rating:not(:checked) > label:before {
-    content: '★ ';
+.rating:not(:checked) > label:before
+{
+    content: '❤ ';
 }
 
-.rating > input:checked ~ label {
-    color: #f70;
-    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+.rating > input:checked ~ label
+{
+    color: #ff0003;
+    text-shadow: 1px 1px #cc0b24, 2px 2px #99146a, .1em .1em .2em rgba(0,0,0,.5);
 }
 
 .rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-    color: gold;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #ff00a1;
+    text-shadow: 1px 1px #c76ada, 2px 2px #b590ac, .1em .1em .2em rgba(0,0,0,.5);
 }
 
 .rating > input:checked + label:hover,
 .rating > input:checked + label:hover ~ label,
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
-    color: #ea0;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+.rating > label:hover ~ input:checked ~ label
+{
+    color: #fc7464;
+    text-shadow: 1px 1px #da3400, 2px 2px #b50011, .1em .1em .2em rgba(0,0,0,.5);
 }
 
-.rating > label:active {
-    top:2px;
-    left:2px;
+.rating > label:active
+{
+    top: 2px;
+    left: 2px;
 }
