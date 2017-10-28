@@ -1,131 +1,187 @@
 <!DOCTYPE html>
-<!--suppress Annotator -->
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 <link href="https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic"
-      rel='stylesheet'
-      type='text/css'>
+    rel='stylesheet'
+    type='text/css'>
 <head>
     <meta charset="utf-8">
     <title>Мяндекс.Муррркет</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<label>
-    <input type="checkbox">
-    На столбик
-</label>
-<div class="to-be-changed">
+<input type="checkbox">На столбик
+<div class="to-be-changed" >
     <!-- Здесь прикладывать основное усилие -->
-    <h4 class="title">Мяндекс.Муррркет</h4>
     <div class="block">
         <a href="#" class="cat1 change"></a>
+        <div class="element">
         <p class="name">Грустняша- кот</p>
         <p class="category">Грусть</p>
-        <div class="rating" title="4,6">
-        <div style="width: 69%;"></div>
+      <span class="rating" title="4,6">
+            <input type="radio" id="star51" name="rating1" value="5" checked /><label for="star51" title="Rocks!">5 stars</label>
+            <input type="radio" id="star41" name="rating1" value="4"  /><label for="star41" title="Pretty good">4 stars</label>
+            <input type="radio" id="star31" name="rating1" value="3" /><label for="star31" title="Meh">3 stars</label>
+            <input type="radio" id="star21" name="rating1" value="2" /><label for="star21" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star11" name="rating1" value="1" /><label for="star11" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Этот кот поможет вам погрустить</p>
         </div>
-    <p class="price">$10</p>
-    <p class="about">Этот кот поможет вам погрустить</p>
-</div>
-<div class="block">
-    <a href="#" class="cat2 change"></a>
-    <p class="name">Любоффка-кот</p>
-    <p class="category">Любовь</p>
-    <p>
-    <div class="rating" title="5">
-        <div style="width: 100%;"></div>
+        <p class="price">$10</p>
     </div>
-    <p class="price">$100</p>
-    <p class="about">Кот переполнен любовью(ко всему:3)</p>
-</div>
-<div class="block">
-    <a href="#" class="cat3 change"></a>
-    <p class="name">Кино-кот</p>
-    <p class="category">Кино</p>
-    <p>
-    <div class="rating" title="5">
-        <div style="width: 100%;"></div>
+
+    <div class="block">
+        <a href="#" class="cat2 change"></a>
+        <div class="element">
+        <p class="name">Любоффка-кот</p>
+        <p class="category">Любовь</p>
+      <span class="rating" title="4,6">
+            <input type="radio" id="star52" name="rating2" value="5" /><label for="star52" title="Rocks!">5 stars</label>
+            <input type="radio" id="star42" name="rating2" value="4" checked /><label for="star42" title="Pretty good">4 stars</label>
+            <input type="radio" id="star32" name="rating2" value="3" /><label for="star32" title="Meh">3 stars</label>
+            <input type="radio" id="star22" name="rating2" value="2"  /><label for="star22" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star12" name="rating2" value="1" /><label for="star12" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Кот переполнен любовью(ко всему:3)</p>
+        </div>
+        <p class="price">$100</p>
     </div>
-    <p class="price">$1000</p>
-    <p class="about">Хорош при просмотре фильмов</p>
-</div>
-<div class="block">
-    <a href="#" class="cat4 change"></a>
-    <p class="name">WTF!</p>
-    <p class="category">Смущение</p>
-    <p>
-    <div class="rating" title="3,6">
-        <div style="width: 100%;"></div>
+
+    <div class="block">
+        <a href="#" class="cat3 change"></a>
+        <div class="element">
+        <p class="name">Кино-кот</p>
+        <p class="category">Кино</p>
+      <span class="rating" title="4,6">
+            <input type="radio" id="star53" name="rating3" value="5" /><label for="star53" title="Rocks!">5 stars</label>
+            <input type="radio" id="star43" name="rating3" value="4"  /><label for="star43" title="Pretty good">4 stars</label>
+            <input type="radio" id="star33" name="rating3" value="3" /><label for="star33" title="Meh">3 stars</label>
+            <input type="radio" id="star23" name="rating3" value="2" checked /><label for="star23" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star13" name="rating3" value="1" /><label for="star13" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Хорош при просмотре фильмов</p>
     </div>
-    <p class="price">$50</p>
-    <p class="about">Хмм....</p>
-</div>
-<div class="block">
-    <a href="#" class="cat5 change"></a>
-    <p class="name">Джеймс Кот</p>
-    <p class="category">Бонд</p>
-    <p>
-    <div class="rating" title="0,6">
-        <div style="width: 10%;"></div>
+        <p class="price">$1000</p>
     </div>
-    <p class="price">$007</p>
-    <p class="about">Взболтать, но не смешивать.</p>
-</div>
-<div class="block">
-    <a href="#" class="cat6 change"></a>
-    <p class="name">Дивокот</p>
-    <p class="category">Удивление</p>
-    <p>
-    <div class="rating" title="1">
-        <div style="width: 20%;"></div>
+
+    <div class="block">
+        <a href="#" class="cat4 change"></a>
+        <div class="element">
+        <p class="name">WTF!</p>
+        <p class="category">Смущение</p>
+            <span class="rating" title="4,6">
+            <input type="radio" id="star54" name="rating4" value="5" /><label for="star54" title="Rocks!">5 stars</label>
+            <input type="radio" id="star44" name="rating4" value="4"  /><label for="star44" title="Pretty good">4 stars</label>
+            <input type="radio" id="star34" name="rating4" value="3" /><label for="star34" title="Meh">3 stars</label>
+            <input type="radio" id="star24" name="rating4" value="2" checked/><label for="star24" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star14" name="rating4" value="1" /><label for="star14" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Хмм....</p>
     </div>
-    <p class="price">$666</p>
-    <p class="about">Удивительная котейка</p>
-</div>
-<div class="block">
-    <a href="#" class="cat7 change"></a>
-    <p class="name">Улыбака-кот</p>
-    <p class="category">Радость</p>
-    <p>
-    <div class="rating" title="2,5">
-        <div style="width: 49%;"></div>
+        <p class="price">$50</p>
     </div>
-    <p class="price">$5</p>
-    <p class="about">Приносит радость</p>
-</div>
-<div class="block">
-    <a href="#" class="cat8 change"></a>
-    <p class="name">Прятки-кот</p>
-    <p class="category">Игра</p>
-    <p>
-    <div class="rating" title="5">
-        <div style="width: 100%;"></div>
+
+    <div class="block">
+        <a href="#" class="cat5 change"></a>
+        <div class="element">
+        <p class="name">Джеймс Кот</p>
+        <p class="category">Бонд</p>
+            <span class="rating" title="4,6">
+            <input type="radio" id="star55" name="rating5" value="5" /><label for="star55" title="Rocks!">5 stars</label>
+            <input type="radio" id="star45" name="rating5" value="4"  /><label for="star45" title="Pretty good">4 stars</label>
+            <input type="radio" id="star35" name="rating5" value="3" checked/><label for="star35" title="Meh">3 stars</label>
+            <input type="radio" id="star25" name="rating5" value="2" /><label for="star25" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star15" name="rating5" value="1" /><label for="star15" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Взболтать, но не смешивать.</p>
     </div>
-    <p class="price">$88</p>
-    <p class="about">Любит прятать и прятаться</p>
-</div>
-<div class="block">
-    <a href="#" class="cat9 change"></a>
-    <p class="name">Фи-кот</p>
-    <p class="category">Презрение</p>
-    <p>
-    <div class="rating" title="4">
-        <div style="width: 75%;"></div>
+        <p class="price">$007</p>
     </div>
-    <p class="price">$9</p>
-    <p class="about">Кот может делать Фи</p>
-</div>
-<div class="block">
-    <a href="#" class="cat10 change"></a>
-    <p class="name">Голод-кот</p>
-    <p class="category">Еда</p>
-    <p>
-    <div class="rating" title="2,5">
-        <div style="width: 50%;"></div>
+
+    <div class="block">
+        <a href="#" class="cat6 change"></a>
+        <div class="element">
+        <p class="name">Дивокот</p>
+        <p class="category">Удивление</p>
+            <span class="rating" title="4,6">
+            <input type="radio" id="star56" name="rating6" value="5" checked /><label for="star56" title="Rocks!">5 stars</label>
+            <input type="radio" id="star46" name="rating6" value="4"  /><label for="star46" title="Pretty good">4 stars</label>
+            <input type="radio" id="star36" name="rating6" value="3" /><label for="star36" title="Meh">3 stars</label>
+            <input type="radio" id="star26" name="rating6" value="2" /><label for="star26" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star16" name="rating6" value="1"  /><label for="star16" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Удивительная котейка</p>
     </div>
-    <p class="price">$65</p>
-    <p class="about">Любит покушать</p>
-</div>
+        <p class="price">$666</p>
+    </div>
+
+    <div class="block">
+        <a href="#" class="cat7 change"></a>
+        <div class="element">
+        <p class="name">Улыбака-кот</p>
+        <p class="category">Радость</p>
+            <span class="rating" title="4,6">
+            <input type="radio" id="star57" name="rating7" value="5" /><label for="star57" title="Rocks!">5 stars</label>
+            <input type="radio" id="star47" name="rating7" value="4"  /><label for="star47" title="Pretty good">4 stars</label>
+            <input type="radio" id="star37" name="rating7" value="3" /><label for="star37" title="Meh">3 stars</label>
+            <input type="radio" id="star27" name="rating7" value="2" /><label for="star27" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star17" name="rating7" value="1" checked/><label for="star17" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Приносит радость</p>
+    </div>
+        <p class="price">$5</p>
+    </div>
+
+    <div class="block">
+        <a href="#" class="cat8 change"></a>
+        <div class="element">
+        <p class="name">Прятки-кот</p>
+        <p class="category">Игра</p>
+      <span class="rating" title="4,6">
+            <input type="radio" id="star58" name="rating8" value="5" /><label for="star58" title="Rocks!">5 stars</label>
+            <input type="radio" id="star48" name="rating8" value="4"  /><label for="star48" title="Pretty good">4 stars</label>
+            <input type="radio" id="star38" name="rating8" value="3" /><label for="star38" title="Meh">3 stars</label>
+            <input type="radio" id="star28" name="rating8" value="2" checked/><label for="star28" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star18" name="rating8" value="1" /><label for="star18" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Любит прятать и прятаться</p>
+    </div>
+        <p class="price">$88</p>
+    </div>
+
+    <div class="block">
+        <a href="#" class="cat9 change"></a>
+        <div class="element">
+        <p class="name">Фи-кот</p>
+        <p class="category">Презрение</p>
+            <span class="rating" title="4,6">
+            <input type="radio" id="star59" name="rating9" value="5" /><label for="star59" title="Rocks!">5 stars</label>
+            <input type="radio" id="star49" name="rating9" value="4"  /><label for="star49" title="Pretty good">4 stars</label>
+            <input type="radio" id="star39" name="rating9" value="3" checked/><label for="star39" title="Meh">3 stars</label>
+            <input type="radio" id="star29" name="rating9" value="2" /><label for="star29" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star19" name="rating9" value="1" /><label for="star19" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Кот может делать Фи</p>
+    </div>
+        <p class="price">$9</p>
+    </div>
+
+    <div class="block">
+        <a href="#" class="cat10 change"></a>
+        <div class="element">
+        <p class="name">Голод-кот</p>
+        <p class="category">Еда</p>
+            <span class="rating" title="4,6">
+            <input type="radio" id="star510" name="rating10" value="5" /><label for="star510" title="Rocks!">5 stars</label>
+            <input type="radio" id="star410" name="rating10" value="4"  /><label for="star410" title="Pretty good">4 stars</label>
+            <input type="radio" id="star310" name="rating10" value="3" checked/><label for="star310" title="Meh">3 stars</label>
+            <input type="radio" id="star210" name="rating10" value="2" /><label for="star210" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star110" name="rating10" value="1" /><label for="star110" title="Sucks big time">1 star</label>
+      </span>
+        <p class="about">Любит покушать</p>
+    </div>
+        <p class="price">$65</p>
+    </div>
+
 </div>
 </body>
 </html>

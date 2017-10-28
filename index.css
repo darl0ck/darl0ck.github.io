@@ -1,3 +1,41 @@
+input[type=checkbox]:checked ~ .to-be-changed .block
+{
+    float: left;
+    position: inherit;
+    /*margin-top: -184px;*/
+    /*margin-left: 344px;*/
+    /*width: 156px;*/
+    display: -webkit-box;
+}
+
+input[type=checkbox]:checked ~ .to-be-changed {
+    width: 500px;
+    height: auto;
+    text-align: left;
+    margin: 0 8px 0 0;
+}
+
+input[type=checkbox]:checked ~ .to-be-changed .block .price {
+    margin-top: 3em;
+    margin-left: 45em;
+}
+
+input[type=checkbox]:checked ~ .to-be-changed .element
+{
+    margin: 2em;
+    padding-left: 8em;
+    position: absolute;
+}
+body
+{
+    min-width: 349px;
+    min-height: 172px;
+}
+
+span.rating
+{
+    display: inline-block;
+}
 
 .title {
     font-weight: bold;
@@ -11,6 +49,7 @@
 
 div {
     height: 10px;
+
 }
 
 div p {
@@ -23,7 +62,7 @@ div p {
     height: 250px;
     padding: 50px;
     text-align: left;
-    width: 150px;
+    width: 190px;
     float: left;
     text-overflow: ellipsis;
 }
@@ -62,6 +101,8 @@ div p {
 }
 .price {
     font-family: 'Pacifico', cursive;
+    position: absolute;
+    margin-top: -39px;
 }
 
 .price:hover {
@@ -90,6 +131,8 @@ div p {
     div {
         max-width: 68%;
         height: auto;
+        min-width: 349px;
+        min-height: 172px;
     }
 }
 
@@ -194,6 +237,7 @@ div p {
     background: url(test.jpg);
 }
 
+
 div.rating {
     width: 85px;
     background: url('star-0-big.gif') repeat-x 0 0;
@@ -203,4 +247,53 @@ div.rating div {
     background: url('star-1-big.gif') repeat-x 0 0;
     font-size: 1px;
     text-indent: -9999px;
+}
+
+
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:198%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    top:2px;
+    left:2px;
 }
