@@ -1,14 +1,41 @@
 {
-    "private": true,
-    "scripts": {
-        "test": "npm run test-html && npm run test-css",
-        "test-html": "mocha ./node_modules/html-tests/task-stub/test",
-        "test-css": "stylelint *.css"
-    },
-    "dependencies": {
-        "html-tests": "https://github.com/urfu-2015/html-test-suite.git#stable",
-        "mocha": "2.3.3",
-        "should": "7.1.0",
-        "stylelint": "2.0.0"
-    }
+  "private": true,
+  "scripts": {
+    "test": "npm run lint && mocha ./node_modules/html-tests/task-stub/test",
+    "lint": "stylelint *.css **/*.css && html-validator --file index.html --verbose && htmllint *.html"
+  },
+  "dependencies": {
+    "gulp-shorthand": "1.1.0",
+    "html-tests": "1.0.2",
+    "html-validator-cli": "3.0.2",
+    "htmllint-cli-alpha": "0.0.6",
+    "mocha": "3.1.0",
+    "should": "11.1.0",
+    "stylefmt": "6.0.0",
+    "stylelint": "7.3.1",
+    "stylelint-config-hrundel": "1.0.3"
+  },
+  "name": "markup-task-4",
+  "description": "Перед выполнением задания внимательно прочитайте:",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-clean-css": "3.9.0",
+    "gulp-csslint": "1.0.0",
+    "gulp-cssnano": "2.1.2",
+    "gulp-csso": "3.0.0",
+    "gulp-uncss": "1.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darl0ck/markup-task-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darl0ck/markup-task-4/issues"
+  },
+  "homepage": "https://github.com/darl0ck/markup-task-4#readme"
 }

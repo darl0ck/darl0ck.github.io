@@ -15,10 +15,17 @@ input[type='checkbox']:checked ~ .to-be-changed
     margin-right: 8px;
 }
 
-input[type='checkbox']:checked ~ .to-be-changed .block .price
+input[type='checkbox']:checked ~ .to-be-changed .block .price,
+input[type='checkbox']:checked ~ .to-be-changed .block .oldPrice
 {
     margin-top: 3em;
     margin-left: 45em;
+}
+
+input[type='checkbox']:checked ~ .to-be-changed .block .newPrice
+{
+    margin-top: 3em;
+    margin-left: -5em;
 }
 
 input[type='checkbox']:checked ~ .to-be-changed .element
@@ -61,17 +68,47 @@ div p
 {
     margin: 5px ;
     text-overflow: ellipsis;
+    width: 120px;
 }
 
 .block
 {
-    margin: 10px;
-    height: 250px;
+    margin: 61px 61px 13px;
+    height: 325px;
     padding: 50px;
     text-align: left;
-    width: 190px;
+    /*width: 190px;*/
     float: left;
     text-overflow: ellipsis;
+}
+
+input[type='checkbox']:not(:checked) ~ .to-be-changed .block
+{
+    height: 325px;
+}
+
+.block:hover
+{
+    animation: heartbeat  infinite alternate ;
+    animation-duration: 3000ms;
+    transform-origin: center;
+    height: auto ;
+    box-shadow: 0 14px 70px rgba(31, 93, 18, .5);
+}
+
+@keyframes heartbeat
+{
+    50%
+    {
+        animation-duration: 11ms;
+        transform: scale(1.1);
+    }
+
+    100%
+    {
+        transform: rotate(360deg) scale(1.1);
+        animation-duration: 14ms;
+    }
 }
 
 .name
@@ -85,9 +122,6 @@ div p
 .name:hover
 {
     color: #9a84ff;
-    font-weight: bold;
-    font-style: normal;
-    font-size: larger;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -101,9 +135,7 @@ div p
 .category:hover
 {
     color: #b38c62;
-    font-weight: bold;
     font-style: normal;
-    font-size: larger;
 }
 
 .mark
@@ -115,14 +147,31 @@ div p
 .price
 {
     font-family: 'Pacifico', cursive;
-    position: absolute;
+    /*position: absolute;*/
+    color: #0026ff;
     margin-top: -39px;
 }
 
-.price:hover
+.oldPrice
 {
+    text-decoration: line-through;
+    color: #7d7a69;
+    margin-top: -39px;
+    font-size: medium;
+}
+
+.newPrice
+{
+    color: #ff0003;
+    font-size: x-large;
+    margin-top: -45px;
+    margin-left: 38px;
     font-weight: bold;
-    font-size: larger;
+}
+
+.price:hover,
+.newPrice:hover
+{
     color: #92b379;
 }
 
@@ -134,8 +183,6 @@ div p
 
 .about:hover
 {
-    font-size: large;
-    font-weight: bold;
     color: #b36370;
 
 }
@@ -194,7 +241,7 @@ div p
     background: url(sadcat.jpg);
     display: block;
     width: 196px;
-    height: 183px;
+    height: 186px;
 }
 
 .cat2
@@ -274,24 +321,9 @@ div p
     background: url(test.jpg);
 }
 
-div.rating
-{
-    width: 85px;
-    background: url('star-0-big.gif') repeat-x 0 0;
-}
-
-div.rating div
-{
-    height: 18px;
-    background: url('star-1-big.gif') repeat-x 0 0;
-    font-size: 1px;
-    text-indent: -9999px;
-}
-
 .rating:not(:checked) > input
 {
     position: absolute;
-    top: -9999px;
     clip: rect(0,0,0,0);
 }
 
